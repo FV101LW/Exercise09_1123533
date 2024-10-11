@@ -3,13 +3,29 @@
   <head>
     <title>Hello, World!</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .loader {
+        border: 16px solid red;
+        border-top: 16px solid gold;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+      }
+
+@keyframes spin {
+  0% {tranform: rotate(0deg);}
+  100% {transform: rotate(260deg);}
+}
+      
+    </style>
   </head>
   <body>
       <h1 class="title">Welcome to Los Pollos Hermanos! </h1>
       <p id="currentTime"></p>
       <script src="script.js"></script>
       
-      <form>
+      <form action= "page1.html>
         <label for="fname"> First Name: </label> <br>
         <input type ="text" id="fname" name ="fname"> <br>
         <label for="sname"> Surname: </label> <br>
@@ -19,5 +35,7 @@
         <input type= "submit" value= "Submit">
         <input type= "Reset">
       </form>
+
+    <div class="loader></div>
   </body>
 </html>
